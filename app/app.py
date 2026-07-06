@@ -3,8 +3,8 @@ from fastapi import File, UploadFile, Request, FastAPI, HTTPException
 
 app = FastAPI()
 
-@app.post("/docx")
-def docx():
+@app.get("/docx")
+async def docx():
     return {"message": "Testdocx"}
 
 if __name__ == "__main__":
