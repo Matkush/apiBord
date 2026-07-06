@@ -4,7 +4,7 @@ from fastapi import File, UploadFile, Request, FastAPI, HTTPException
 app = FastAPI()
 
 @app.post("/docx")
-async def docx():
+def docx():
     return {"message": "Testdocx"}
 
 if __name__ == "__main__":
